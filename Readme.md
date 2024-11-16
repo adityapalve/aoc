@@ -1,1 +1,1 @@
-Advent Of Code 2023 repository consisting of daily solutions.
+Advent Of Code repository consisting of daily solutions.
