@@ -16,11 +16,8 @@ def foo():
     # return s
     score = 0
     for l in left:
-        freq = 0
-        for r in right:
-            if l == r:
-                freq += 1
-        score = score + l*freq
+      freq = right.count(l)
+      score = score + l*freq
     return score
 
 print(foo())
