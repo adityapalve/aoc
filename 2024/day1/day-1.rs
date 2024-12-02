@@ -1,18 +1,18 @@
-// Take input from input.txt
-// 
-// 
-// write function for part 1
-fn part1(){
-}
+use std::env;
+use std::fs;
 
-// Part 2, Use a counter? 
-fn part2(){
+
+fn part1(){
+  let contents = fs::read_to_string("input.txt").expect("");
+  let (lefts, rights): (Vec<&str>, Vec<&str>) = contents
+    .lines()
+    .map(|line| line.split_once(' ').expect("couldn't split"))
+    .unzip()
+  // println!("{:}", contents);
   
 }
 
 
 fn main(){
-  
-  print(part1());
-  print(part2());
+  part1();
 }
