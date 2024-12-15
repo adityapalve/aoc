@@ -11,6 +11,7 @@ def part1():
     check = False
     flag = True
     level = [int(x) for x in line.split()]
+    # level = list(map(int, line.split())
     s_level = sorted(level)
     if (level == s_level) or (level[::-1] == s_level):
       # print(level, s_level)
